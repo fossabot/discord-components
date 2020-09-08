@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  padding: 2px 16px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 14px;
+  user-select: none;
+  min-height: 38px;
+  min-width: 60px;
+  transition: background-color .25s ease;
+}
+
+.button.purple {
+  color: #fff;
+  background-color: var(--purple);
+}
+
+.button.purple:hover {
+  background-color: var(--hovered-purple);
+}
+
+.button.purple:active {
+  background-color: var(--active-purple);
+}
