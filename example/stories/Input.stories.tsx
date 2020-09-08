@@ -46,3 +46,7 @@ export const DarkWithPlaceholder = () => (
 Dark.parameters = {
   backgrounds: { default: 'dark' }
 }
+
+DarkWithPlaceholder.parameters = {
+  backgrounds: { default: 'dark' }
+}
