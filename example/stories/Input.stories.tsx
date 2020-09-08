@@ -4,7 +4,7 @@ import { Input } from 'discord-components'
 import { action } from '@storybook/addon-actions'
 
 export default {
-  title: 'Input',
+  title: 'Text Fields',
   backgrounds: {
     default: 'light',
     values: [

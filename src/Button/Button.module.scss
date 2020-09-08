@@ -10,32 +10,65 @@
   min-width: 60px;
   transition: background-color .25s ease;
   color: #fff;
-}
 
-.button.purple {
-  background-color: var(--purple);
-}
+  &.default {
+    &.purple {
+      background-color: var(--purple);
+      &:hover {
+        background-color: var(--purple-hover);
+      }
+      &:active {
+        background-color: var(--purple-active);
+      }
+    }
 
-.button.purple:hover {
-  background-color: var(--hovered-purple);
-}
+    &.red {
+      background-color: var(--red);
+      &:hover {
+        background-color: var(--red-hover);
+      }
+      &:active {
+        background-color: var(--red-active);
+      }
+    }
 
-.button.purple:active {
-  background-color: var(--active-purple);
-}
+    &.green {
+      background-color: var(--green);
+      &:hover {
+        background-color: var(--green-hover);
+      }
+      &:active {
+        background-color: var(--green-active);
+      }
+    }
+  }
 
-.button.red {
-  background-color: var(--red);
-}
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid;
 
-.button.red:hover {
-  background-color: var(--red-hover);
-}
+    &.purple {
+      color: var(--purple);
+      border-color: var(--purple);
+      &:active {
+        background-color: var(--purple-outline-active);
+      }
+    }
 
-.button.red:active {
-  background-color: var(--red-active);
-}
+    &.red {
+      color: var(--red);
+      border-color: var(--red);
+      &:active {
+        background-color: var(--red-outline-active);
+      }
+    }
 
-.button.green {
-  background-color: var(--green);
+    &.green {
+      color: var(--green);
+      border-color: var(--green);
+      &:active {
+        background-color: var(--green-outline-active);
+      }
+    }
+  }
 }
