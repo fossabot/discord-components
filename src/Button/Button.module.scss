@@ -9,10 +9,10 @@
   min-height: 38px;
   min-width: 60px;
   transition: background-color .25s ease;
+  color: #fff;
 }
 
 .button.purple {
-  color: #fff;
   background-color: var(--purple);
 }
 
@@ -22,4 +22,20 @@
 
 .button.purple:active {
   background-color: var(--active-purple);
+}
+
+.button.red {
+  background-color: var(--red);
+}
+
+.button.red:hover {
+  background-color: var(--red-hover);
+}
+
+.button.red:active {
+  background-color: var(--red-active);
+}
+
+.button.green {
+  background-color: var(--green);
 }
