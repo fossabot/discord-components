@@ -19,11 +19,15 @@
   --green-active: #369167;
   --green-outline-active: #cfffe7;
 
-  --input-border: #0000004d;
-  --input-dark-bg: #303339;
-  --input-dark-border: #222428;
+  --input-bg: #fcfcfc;
+  --input-border: #4f545c4d;
+  --input-color: #2e3338;
+}
 
-  --input-light-bg: #fcfcfc;
-  --input-light-border: #4f545c4d;
-  --input-light-color: #2e3338;
+:global {
+  .dark-theme {
+    --input-bg: #303339;
+    --input-border: #222428;
+    --input-color: #fff;
+  }
 }

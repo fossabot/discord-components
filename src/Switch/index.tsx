@@ -1,16 +1,12 @@
 import React from 'react'
 import styles from './Switch.module.scss'
 
-const Switch = () => {
-  const [checked, setChecked] = React.useState(false)
-
+const Switch: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = ({
+  ...props
+}) => {
   return (
-    <label className={styles.switch}>
-      <input
-        type='checkbox'
-        checked={checked}
-        onChange={() => setChecked(!checked)}
-      />
+    <label className={styles.label}>
+      <input type='checkbox' {...props} className={styles.input} />
       <span className={styles.slider} />
     </label>
   )

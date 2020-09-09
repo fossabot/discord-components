@@ -1,5 +1,4 @@
 import React from 'react'
-import 'discord-components/dist/index.css'
 import { Input } from 'discord-components'
 import { action } from '@storybook/addon-actions'
 
@@ -37,7 +36,14 @@ export const Textarea = () => (
   />
 )
 
-export const Dark = () => <Input dark onChange={action('change')} />
+// @ts-ignore
+const DarkTheme = ({ children }) => <div className='dark-theme'>{children}</div>
+
+export const Dark = () => (
+  <DarkTheme>
+    <Input dark onChange={action('change')} />
+  </DarkTheme>
+)
 
 export const DarkWithPlaceholder = () => (
   <Input placeholder='이름을 입력하세요' dark onChange={action('change')} />

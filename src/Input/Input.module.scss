@@ -9,25 +9,15 @@ input.input {
 .input {
   padding: 10px;
   font-size: 16px;
-  background: var(--input-light-bg);
-  border: 1px solid var(--input-light-border);
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
   transition: border-color .2s ease-in-out;
   outline: none;
-  color: var(--input-light-color);
+  color: var(--input-color);
   border-radius: 3px;
 
   &:focus {
     border-color: var(--purple);
     outline: none;
-  }
-
-  &.dark {
-    background: var(--input-dark-bg);
-    border-color: var(--input-dark-border);
-    color: var(--normal);
-    &:focus {
-      border-color: var(--purple);
-      outline: none;
-    }
   }
 }
