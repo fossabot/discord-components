@@ -32,6 +32,6 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build": "build-storybook -c .storybook -o public"
   }
 }
