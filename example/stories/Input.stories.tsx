@@ -46,7 +46,9 @@ export const Dark = () => (
 )
 
 export const DarkWithPlaceholder = () => (
-  <Input placeholder='이름을 입력하세요' dark onChange={action('change')} />
+  <DarkTheme>
+    <Input placeholder='이름을 입력하세요' dark onChange={action('change')} />
+  </DarkTheme>
 )
 
 Dark.parameters = {
