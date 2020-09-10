@@ -33,8 +33,10 @@
   --header-secondary: #4f5660;
 }
 
-:root .dark-theme {
-  --input-bg: #303339;
-  --input-border: #222428;
-  --input-color: #fff;
+:global {
+  .dark-theme {
+    --input-bg: #303339;
+    --input-border: #222428;
+    --input-color: #fff;
+  }
 }
