@@ -3,7 +3,7 @@ import { Input } from 'discord-components'
 import { action } from '@storybook/addon-actions'
 
 export default {
-  title: 'Text Fields',
+  title: '텍스트 필드',
   backgrounds: {
     default: 'light',
     values: [

@@ -2,7 +2,7 @@ import React from 'react'
 import { RadioSelect } from 'discord-components'
 
 export default {
-  title: 'Select Buttons'
+  title: '라디오 버튼(?)'
 }
 
 export const Default = () => (

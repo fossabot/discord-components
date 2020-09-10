@@ -4,7 +4,7 @@ import 'discord-components/dist/index.css'
 import { action } from '@storybook/addon-actions'
 
 export default {
-  title: 'Button'
+  title: '버튼'
 }
 
 const ButtonSpacer = () => (
