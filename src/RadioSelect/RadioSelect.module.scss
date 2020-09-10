@@ -24,7 +24,6 @@
         vertical-align: top;
         border: 1px solid var(--input-border);
         margin-right: 5px;
-        background: #fff;
       }
 
       .svg {
@@ -87,6 +86,10 @@
 
     input:checked + .background .svg {
       visibility: visible;
+    }
+
+    input:checked + .background .checkboxDisplayContainer {
+      background: #fff;
     }
 
     input:checked + .background .checkboxDisplayContainer {
