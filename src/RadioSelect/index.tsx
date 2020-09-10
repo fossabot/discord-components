@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Switch.module.scss'
+import styles from './RadioSelect.module.scss'
 import { Color } from '..'
 
 type SelectItem = {
@@ -40,6 +40,7 @@ const RadioButton = ({ items }: { items: Array<SelectItem> }) => {
           >
             <div className={styles.checkboxDisplayContainer}>
               <svg
+                className={styles.svg}
                 aria-hidden='true'
                 width='18'
                 height='18'
@@ -54,10 +55,12 @@ const RadioButton = ({ items }: { items: Array<SelectItem> }) => {
               </svg>
             </div>
 
-            {item.title}
-            {item.description && (
-              <p className={styles.desc}>{item.description}</p>
-            )}
+            <p className={styles.titleContainer}>
+              {item.title}
+              {item.description && (
+                <p className={styles.description}>{item.description}</p>
+              )}
+            </p>
           </span>
         </label>
       ))}

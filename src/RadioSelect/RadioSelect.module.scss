@@ -16,41 +16,76 @@
       margin-bottom: 5px;
 
       .checkboxDisplayContainer {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        border-radius: 3px;
+        height: 20px;
         display: inline-block;
+        vertical-align: top;
         border: 1px solid var(--input-border);
+        margin-right: 5px;
         background: #fff;
       }
 
-      .path {
-        fill: var(--red);
+      .svg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        visibility: hidden;
       }
 
       &.purple {
-        color: var(--purple)
+        color: var(--purple);
+
+        .path {
+          fill: var(--purple);
+        }
       }
 
       &.green {
-        color: var(--green)
+        color: var(--green);
+
+        .path {
+          fill: var(--green);
+        }
       }
 
       &.red {
-        color: var(--red)
+        color: var(--red);
+
+        .path {
+          fill: var(--red);
+        }
       }
 
       &.yellow {
-        color: var(--yellow)
+        color: var(--yellow);
+
+        .path {
+          fill: var(--yellow);
+        }
       }
 
       border-radius: 3px;
       width: calc(100% - 20px);
       padding: 10px;
 
-      p {
+      .titleContainer {
+        display: inline-block;
+        margin: 0;
+      }
+
+      .description {
+        padding-top: 5px;
         margin: 5px 0 0;
         color: var(--header-secondary);
       }
+    }
+
+    input:checked + .background .svg {
+      visibility: visible;
     }
 
     input:checked + .background {
