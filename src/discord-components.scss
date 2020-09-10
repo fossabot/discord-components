@@ -2,6 +2,8 @@
 
 
 :root {
+  --primary: #f6f6f799;
+
   --normal: #dcddde;
 
   --purple: #7289da;
@@ -35,8 +37,12 @@
 
 :global {
   .dark-theme {
+    --primary: #2022254d;
+
+    --header-secondary: #b9bbbe;
+
     --input-bg: #303339;
-    --input-border: #222428;
+    --input-border: #202225;
     --input-color: #fff;
   }
 }

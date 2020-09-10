@@ -10,6 +10,7 @@
     height: 100%;
 
     .background {
+      background-color: var(--primary);
       padding-inline: 7px 14px;
       border: 1px solid var(--input-border);
       display: inline-block;
@@ -86,6 +87,10 @@
 
     input:checked + .background .svg {
       visibility: visible;
+    }
+
+    input:checked + .background .checkboxDisplayContainer {
+      border-color: #00000000;
     }
 
     input:checked + .background {
