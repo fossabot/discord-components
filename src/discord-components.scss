@@ -4,6 +4,9 @@
 :root {
   --normal: #dcddde;
 
+  // embed
+  --embed-background: #e3e5e8;
+
   --purple: #7289da;
   --purple-hover: #677bc4;
   --purple-active: #5b6eae;
@@ -29,7 +32,11 @@
   --input-border: #e3e5e8;
   --input-color: #2e3338;
 
-  // headers
+  // text colors
+  --text-normal: #2e3338;
+
+  // header colors
+  --header-primary: #060607;
   --header-secondary: #4f5660;
 }
 

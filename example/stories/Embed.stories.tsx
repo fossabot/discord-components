@@ -5,4 +5,16 @@ export default {
   title: '임베드'
 }
 
-export const Example = () => <MessageEmbed />
+export const Example = () => (
+  <MessageEmbed
+    embed={{
+      title: '타이틀',
+      description: '와샌즈',
+      footer: {
+        text: 'ditto7890#1234',
+        icon:
+          'https://cdn.discordapp.com/avatars/604617640891121664/1f86839f891456d76a79e50e5c901d6e.png'
+      }
+    }}
+  />
+)

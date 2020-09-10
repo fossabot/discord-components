@@ -1,0 +1,85 @@
+.embedContainer {
+  background: var(--embed-background);
+  padding: 15px;
+  display: inline-grid;
+  border-left: 5px solid var(--purple);
+  border-radius: 3px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  max-width: 520px;
+}
+
+.embedTitle {
+  color: var(--header-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  grid-column: 1/1;
+}
+
+.embedDescription {
+  color: var(--text-normal);
+  font-size: .875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  white-space: pre-line;
+  grid-column: 1/1;
+}
+
+.embedField {
+  font-size: 0.815rem;
+  line-height: 1.125rem;
+  min-width: 0;
+  font-weight: 400;
+}
+
+.embedFieldName {
+  color: var(--header-primary);
+}
+
+.embedFieldName {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  min-width: 0;
+}
+
+.embedFieldValue {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  white-space: pre-line;
+  min-width: 0;
+}
+
+.embedFields {
+  display: grid;
+  grid-column: 1/1;
+  margin-top: 8px;
+  grid-gap: 8px;
+}
+
+.embedFooter {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  grid-row: auto/auto;
+  grid-column: 1/1;
+}
+
+.embedFooterIcon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.embedFooterText {
+  font-size: .75rem;
+  line-height: 1rem;
+  color: var(--text-normal);
+}
