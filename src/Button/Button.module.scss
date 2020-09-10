@@ -32,6 +32,17 @@
       }
     }
 
+    &.yellow {
+      background-color: var(--yellow);
+      &:hover {
+        background-color: var(--yellow-hover);
+      }
+
+      &:active {
+        background-color: var(--yellow-active);
+      }
+    }
+
     &.green {
       background-color: var(--green);
       &:hover {
@@ -68,6 +79,14 @@
       border-color: var(--green);
       &:active {
         background-color: var(--green-outline-active);
+      }
+    }
+
+    &.yellow {
+      color: var(--yellow);
+      border-color: var(--yellow);
+      &:active {
+        background-color: var(--yellow-outline-active);
       }
     }
   }

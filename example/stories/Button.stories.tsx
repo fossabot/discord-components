@@ -27,6 +27,9 @@ export const Default = () => (
     <Button onClick={action('btn3_click')} color='green'>
       BUTTON
     </Button>
+    <Button onClick={action('btn4_click')} color='yellow'>
+      BUTTON
+    </Button>
   </>
 )
 
@@ -40,6 +43,9 @@ export const Outlined = () => (
       BUTTON
     </Button>
     <Button variant='outlined' onClick={action('btn3_click')} color='green'>
+      BUTTON
+    </Button>
+    <Button variant='outlined' onClick={action('btn4_click')} color='yellow'>
       BUTTON
     </Button>
   </>

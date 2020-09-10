@@ -19,15 +19,22 @@
   --green-active: #369167;
   --green-outline-active: #cfffe7;
 
+  --yellow: #faa61a;
+  --yellow-hover: #dd9214;
+  --yellow-active: #c4800d;
+  --yellow-outline-active: #ffe1b7;
+
+
   --input-bg: #fcfcfc;
   --input-border: #4f545c4d;
   --input-color: #2e3338;
+
+  // headers
+  --header-secondary: #4f5660;
 }
 
-:global {
-  .dark-theme {
-    --input-bg: #303339;
-    --input-border: #222428;
-    --input-color: #fff;
-  }
+:root .dark-theme {
+  --input-bg: #303339;
+  --input-border: #222428;
+  --input-color: #fff;
 }
