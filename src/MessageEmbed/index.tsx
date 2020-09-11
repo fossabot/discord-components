@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from './MessageEmbed.module.scss'
 
+type EmbedField = {
+  name: string
+  value: string
+  inline?: boolean
+}
+
 type MessageEmbed = {
   title?: string
   description?: string
@@ -8,6 +14,7 @@ type MessageEmbed = {
     text?: string
     icon?: string
   }
+  fields?: Array<EmbedField>
 }
 
 const MessageEmbedComponent = ({ embed }: { embed: MessageEmbed }) => {
@@ -17,12 +24,16 @@ const MessageEmbedComponent = ({ embed }: { embed: MessageEmbed }) => {
       {embed.description && (
         <div className={styles.embedDescription}>{embed.description}</div>
       )}
-      <div className={styles.embedFields}>
-        <div className={styles.embedField}>
-          <div className={styles.embedFieldName}>NAME</div>
-          <div className={styles.embedFieldValue}>VALUE</div>
+      {embed.fields && (
+        <div className={styles.embedFields}>
+          {embed.fields.map((field, i) => (
+            <div className={styles.embedField} key={i}>
+              <div className={styles.embedFieldName}>{field.name}</div>
+              <div className={styles.embedFieldValue}>{field.value}</div>
+            </div>
+          ))}
         </div>
-      </div>
+      )}
       {embed.footer && (
         <div className={styles.embedFooter}>
           {embed.footer.icon && (
