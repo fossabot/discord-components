@@ -83,3 +83,28 @@
   line-height: 1rem;
   color: var(--text-normal);
 }
+
+.embedAuthor {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  grid-row: auto/auto;
+  grid-column: 1/1;
+}
+
+.embedAuthorIcon {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.embedAuthorText {
+  font-size: .75rem;
+  line-height: 1rem;
+  color: var(--text-normal);
+}
+

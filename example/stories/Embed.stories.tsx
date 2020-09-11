@@ -14,6 +14,27 @@ export const Example = () => (
         text: 'ditto7890#1234',
         icon:
           'https://cdn.discordapp.com/avatars/604617640891121664/1f86839f891456d76a79e50e5c901d6e.png'
+      },
+      fields: [
+        {
+          name: '필드',
+          value: '내용',
+          inline: true
+        },
+        {
+          name: '필드',
+          value: '내용',
+          inline: true
+        },
+        {
+          name: '필드',
+          value: '내용'
+        }
+      ],
+      author: {
+        text: 'ditto7890#1234',
+        icon:
+          'https://cdn.discordapp.com/avatars/604617640891121664/1f86839f891456d76a79e50e5c901d6e.png'
       }
     }}
   />
