@@ -15,11 +15,29 @@ type MessageEmbed = {
     icon?: string
   }
   fields?: Array<EmbedField>
+  author?: {
+    text?: string
+    icon?: string
+  }
 }
 
 const MessageEmbedComponent = ({ embed }: { embed: MessageEmbed }) => {
   return (
     <div className={styles.embedContainer}>
+      {embed.author && (
+        <div className={styles.embedAuthor}>
+          {embed.author.icon && (
+            <img
+              alt=''
+              src={embed.author.icon}
+              className={styles.embedAuthorIcon}
+            />
+          )}
+          {embed.author.text && (
+            <div className={styles.embedFooterText}>{embed.author.text}</div>
+          )}
+        </div>
+      )}
       {embed.title && <div className={styles.embedTitle}>{embed.title}</div>}
       {embed.description && (
         <div className={styles.embedDescription}>{embed.description}</div>
